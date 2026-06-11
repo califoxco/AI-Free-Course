@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AILearn — Free AI Engineering Course: From Software Engineer to AI Engineer</title>
+    <meta
+      name="description"
+      content="A free, structured AI engineering course: curated videos and papers, quizzes, in-browser Python coding challenges, and enterprise take-home projects. NeetCode, but for AI."
+    />
+    <meta property="og:title" content="AILearn — Free AI Engineering Course" />
+    <meta
+      property="og:description"
+      content="From software engineer to AI engineer: 37 lessons, 16 coding challenges that run in your browser, and 3 enterprise take-home projects. 100% free."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1916'/%3E%3Cpath d='M18.5 4 8 18h6l-1.5 10L23 14h-6z' fill='%23e2a64e'/%3E%3C/svg%3E"
+    />
+    <script>
+      // Set the theme before first paint to avoid a flash of the wrong mode.
+      (function () {
+        var t = localStorage.getItem('ailearn-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

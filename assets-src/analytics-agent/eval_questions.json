@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "question": "What was total revenue from delivered orders in 2025?",
+    "answer": "$245,638",
+    "concept": "filter + sum"
+  },
+  {
+    "id": 2,
+    "question": "Which month of 2025 had the highest delivered revenue, and how much?",
+    "answer": "2025-07 with $23,888",
+    "concept": "group by month"
+  },
+  {
+    "id": 3,
+    "question": "Which product has generated the most revenue all-time (delivered orders)?",
+    "answer": "Linen Shirt (P-003) with $26,160",
+    "concept": "join + group by product"
+  },
+  {
+    "id": 4,
+    "question": "What was the average order value (AOV) for delivered orders in 2025?",
+    "answer": "$292.43",
+    "concept": "aggregate"
+  },
+  {
+    "id": 5,
+    "question": "What percentage of delivered 2025 orders received a refund?",
+    "answer": "9.88% (83 of 840)",
+    "concept": "join + rate"
+  },
+  {
+    "id": 6,
+    "question": "Which product category had the highest revenue in Q4 2025?",
+    "answer": "Apparel with $17,204",
+    "concept": "date filter + 2 joins"
+  },
+  {
+    "id": 7,
+    "question": "How many customers have placed 2 or more delivered orders all-time?",
+    "answer": "243 customers",
+    "concept": "group + having"
+  },
+  {
+    "id": 8,
+    "question": "Which state has the most customers?",
+    "answer": "MA with 35 customers",
+    "concept": "simple group"
+  },
+  {
+    "id": 9,
+    "question": "How much 2025 delivered revenue came from customers acquired via Instagram?",
+    "answer": "$49,252",
+    "concept": "join through customers"
+  },
+  {
+    "id": 10,
+    "question": "How many orders were cancelled in 2025?",
+    "answer": "65 orders",
+    "concept": "filter + count"
+  },
+  {
+    "id": 11,
+    "question": "Which product sold the most units in 2025 (delivered orders)?",
+    "answer": "Trekking Socks (P-034) with 168 units",
+    "concept": "join + sum quantity"
+  },
+  {
+    "id": 12,
+    "question": "Which product category has the highest total refunded amount (allocate refunds across items proportionally by item value)?",
+    "answer": "Apparel with ~$7,283.85",
+    "concept": "multi-step allocation — hard"
+  }
+]

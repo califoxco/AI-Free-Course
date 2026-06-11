@@ -1,0 +1,26 @@
+{"id":1,"question":"How many PTO days do full-time employees get per year?","answer":"20 days of PTO per calendar year (plus 8 sick days).","source":"pto-policy.md","answerable":true}
+{"id":2,"question":"How many unused PTO days can I carry over into next year, and when must I use them by?","answer":"Up to 5 days, which must be used by March 31.","source":"pto-policy.md","answerable":true}
+{"id":3,"question":"How much notice do I need to give for a week-long vacation?","answer":"At least 2 weeks notice with manager approval (requests over 3 consecutive days).","source":"pto-policy.md","answerable":true}
+{"id":4,"question":"Which days are employees expected to be in the office?","answer":"Tuesday through Thursday.","source":"remote-work-policy.md","answerable":true}
+{"id":5,"question":"Who has to approve a permanent full-remote arrangement?","answer":"A VP (VP-level approval, reviewed annually).","source":"remote-work-policy.md","answerable":true}
+{"id":6,"question":"What is the daily meal reimbursement limit for international travel?","answer":"$110 per day.","source":"expense-policy.md","answerable":true}
+{"id":7,"question":"Within how many days must expenses be submitted in Expensify?","answer":"Within 30 days of the expense date.","source":"expense-policy.md","answerable":true}
+{"id":8,"question":"How quickly must a suspected security incident be reported, and to whom?","answer":"Within 1 hour, to security@meridianhealth.example.","source":"security-incident-runbook.md","answerable":true}
+{"id":9,"question":"For a SEV1 incident involving PHI, how fast must customers be notified?","answer":"Within 24 hours, per the HIPAA Business Associate Agreements.","source":"security-incident-runbook.md","answerable":true}
+{"id":10,"question":"When do contractor accounts expire?","answer":"Automatically after 90 days, requiring sponsor renewal.","source":"access-control-policy.md","answerable":true}
+{"id":11,"question":"How long are API access tokens valid?","answer":"60 minutes.","source":"api-authentication.md","answerable":true}
+{"id":12,"question":"How often must API client secrets be rotated?","answer":"Every 90 days.","source":"api-authentication.md","answerable":true}
+{"id":13,"question":"How do I verify that a webhook actually came from Meridian?","answer":"Compute an HMAC-SHA256 of the raw body with your signing secret and compare it to the X-Meridian-Signature header.","source":"webhooks-guide.md","answerable":true}
+{"id":14,"question":"How many times are failed webhook deliveries retried?","answer":"5 times with exponential backoff over a maximum of 24 hours.","source":"webhooks-guide.md","answerable":true}
+{"id":15,"question":"What is the rate limit on the Standard plan and what happens if I exceed it?","answer":"100 requests/min sustained (2x burst up to 30s); exceeding it returns HTTP 429 with a Retry-After header.","source":"rate-limits.md","answerable":true}
+{"id":16,"question":"What is the committed monthly uptime for the production API?","answer":"99.9%, excluding scheduled maintenance announced 72 hours in advance.","source":"sla-policy.md","answerable":true}
+{"id":17,"question":"What is the first-response time for a P1 support ticket?","answer":"30 minutes, 24/7.","source":"sla-policy.md","answerable":true}
+{"id":18,"question":"A customer wants a refund on their annual plan after 30 days. What applies?","answer":"Annual plans are refundable pro-rata within the first 60 days, so a pro-rated refund applies.","source":"billing-refund-policy.md","answerable":true}
+{"id":19,"question":"Are SLA credits paid out in cash?","answer":"No — they are applied to the next invoice, never paid as cash.","source":"billing-refund-policy.md","answerable":true}
+{"id":20,"question":"Can I deploy to production on a Friday?","answer":"No. Deploys are Monday–Thursday 10:00–16:00 ET only, and there is a freeze in the last week of each quarter.","source":"deployment-runbook.md","answerable":true}
+{"id":21,"question":"How quickly must the on-call engineer acknowledge a SEV1 page?","answer":"Within 5 minutes (secondary is paged automatically otherwise).","source":"oncall-guide.md","answerable":true}
+{"id":22,"question":"How long are database backups retained?","answer":"35 days rolling.","source":"data-retention-policy.md","answerable":true}
+{"id":23,"question":"What is the parental leave policy?","answer":"NOT_ANSWERABLE — parental leave is not covered in the provided documents.","source":null,"answerable":false}
+{"id":24,"question":"How much does the Enterprise plan cost per month?","answer":"NOT_ANSWERABLE — pricing is not covered in the provided documents.","source":null,"answerable":false}
+{"id":25,"question":"How do I configure SSO with Okta?","answer":"NOT_ANSWERABLE — SSO configuration is not covered in the provided documents.","source":null,"answerable":false}
+{"id":26,"question":"Who is the CEO of Meridian Health?","answer":"NOT_ANSWERABLE — company leadership is not covered in the provided documents.","source":null,"answerable":false}

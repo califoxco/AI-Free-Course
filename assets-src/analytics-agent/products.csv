@@ -1,0 +1,35 @@
+product_id,name,category,price
+P-001,Everyday Tee,Apparel,38
+P-002,Heavy Hoodie,Apparel,85
+P-003,Linen Shirt,Apparel,120
+P-004,Track Pants,Apparel,72
+P-005,Rain Shell,Apparel,45
+P-006,Merino Crew,Apparel,85
+P-007,Canvas Jacket,Apparel,98
+P-008,Trail Runner,Footwear,65
+P-009,Court Classic,Footwear,98
+P-010,Slip-On Knit,Footwear,45
+P-011,Leather Boot,Footwear,85
+P-012,Recovery Slide,Footwear,65
+P-013,Canvas Tote,Accessories,18
+P-014,Wool Beanie,Accessories,38
+P-015,Leather Belt,Accessories,18
+P-016,Trucker Cap,Accessories,24
+P-017,Crew Socks 3-Pack,Accessories,58
+P-018,Card Wallet,Accessories,98
+P-019,Ceramic Mug,Home,18
+P-020,Throw Blanket,Home,120
+P-021,Scented Candle,Home,24
+P-022,Linen Napkin Set,Home,85
+P-023,Cutting Board,Home,85
+P-024,Daily Moisturizer,Beauty,65
+P-025,Vitamin C Serum,Beauty,18
+P-026,Lip Balm Trio,Beauty,52
+P-027,Clay Mask,Beauty,52
+P-028,Body Lotion,Beauty,38
+P-029,20L Daypack,Outdoor,58
+P-030,Insulated Bottle,Outdoor,32
+P-031,Camp Blanket,Outdoor,85
+P-032,Headlamp,Outdoor,45
+P-033,Packable Hammock,Outdoor,18
+P-034,Trekking Socks,Outdoor,45
