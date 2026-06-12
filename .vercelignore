@@ -1,0 +1,6 @@
+# Source-only dirs — not part of the Vite build. Excluding them keeps Vercel from
+# auto-detecting a Python project from the reference-solution .py files.
+# The downloadable zips live in public/projects/ and are deployed normally.
+solutions-src
+assets-src
+scripts
