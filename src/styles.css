@@ -1378,9 +1378,14 @@ a:hover {
   border-top: 1px solid var(--border);
   padding-top: 22px;
 }
+.project-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
 .project-download {
   display: inline-block;
-  margin-top: 18px;
 }
 
 .projects-footnote {

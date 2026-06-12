@@ -24,6 +24,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Python (reference solutions)
+__pycache__/
+*.pyc
+
 # Editor / OS
 .vscode/
 .idea/

@@ -1,0 +1,40 @@
+[baseline] Rule-based classifier - no API key needed. This is the floor to beat.
+
+==================================================================
+Classified 140 tickets in 0.0s  (baseline)
+==================================================================
+
+CATEGORY  - per-class precision / recall / F1
+  billing          P=0.57  R=1.00  F1=0.73  (n=27)
+  bug              P=1.00  R=0.91  F1=0.95  (n=33)
+  how_to           P=0.67  R=0.26  F1=0.38  (n=23)
+  account_access   P=0.78  R=0.72  F1=0.75  (n=25)
+  refund_request   P=1.00  R=1.00  F1=1.00  (n=21)
+  feature_request  P=0.30  R=0.27  F1=0.29  (n=11)
+  macro avg        P=0.72  R=0.69  F1=0.68
+  accuracy = 0.75
+
+PRIORITY
+  accuracy = 0.67
+
+NEEDS_HUMAN  - the metric that matters most (a missed escalation is the worst failure)
+  precision=1.00  recall=1.00  F1=1.00  (positives in test: 16)
+
+ORDER_ID extraction
+  exact-match accuracy = 1.00
+
+CATEGORY confusion - top mistakes (gold -> predicted)
+  feature_request  -> billing          x8
+  account_access   -> billing          x7
+  how_to           -> feature_request  x7
+  how_to           -> billing          x5
+  how_to           -> account_access   x5
+  bug              -> how_to           x3
+
+Cost projection at 50,000 tickets/month
+  avg tokens/ticket: 120 uncached-in + 700 cached-in + 30 out
+  model                  $ / month
+  claude-haiku-4-5          $17.00
+  claude-sonnet-4-6         $51.00
+  claude-opus-4-8           $85.00
+  (token figures are estimates; run --provider anthropic for measured usage)

@@ -11,6 +11,8 @@ export interface TakeHomeProject {
   assets: { file: string; description: string }[];
   downloadUrl: string;
   sizeKb: number;
+  /** Optional worked reference solution (a separate download). */
+  solution?: { url: string; sizeKb: number };
 }
 
 export const projects: TakeHomeProject[] = [
@@ -73,6 +75,7 @@ export const projects: TakeHomeProject[] = [
     ],
     downloadUrl: '/projects/ticket-triage-pipeline.zip',
     sizeKb: 12,
+    solution: { url: '/projects/ticket-triage-solution.zip', sizeKb: 23 },
   },
   {
     id: 'analytics-agent',

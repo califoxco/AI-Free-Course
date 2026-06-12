@@ -72,9 +72,16 @@ export default function ProjectsPage() {
                   </li>
                 ))}
               </ul>
-              <a className="btn btn-primary project-download" href={p.downloadUrl} download>
-                ↓ Download assets ({p.sizeKb} KB zip)
-              </a>
+              <div className="project-downloads">
+                <a className="btn btn-primary project-download" href={p.downloadUrl} download>
+                  ↓ Download assets ({p.sizeKb} KB zip)
+                </a>
+                {p.solution && (
+                  <a className="btn btn-ghost project-download" href={p.solution.url} download>
+                    ↓ Reference solution ({p.solution.sizeKb} KB) — try it yourself first
+                  </a>
+                )}
+              </div>
             </div>
           </article>
         ))}
