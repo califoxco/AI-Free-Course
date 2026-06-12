@@ -45,6 +45,7 @@ export const projects: TakeHomeProject[] = [
     ],
     downloadUrl: '/projects/knowledge-assistant-rag.zip',
     sizeKb: 11,
+    solution: { url: '/projects/knowledge-assistant-solution.zip', sizeKb: 24 },
   },
   {
     id: 'ticket-triage',

@@ -1,0 +1,24 @@
+[offline] BM25 retrieval + extractive answers - no API key needed.
+          This is the floor; run --provider anthropic for the real system.
+
+======================================================================
+RETRIEVAL  - 22 answerable questions, top-5 chunks
+======================================================================
+  bm25           recall@1=1.00  recall@3=1.00  recall@5=1.00  MRR=1.00
+  tfidf-cosine   recall@1=1.00  recall@3=1.00  recall@5=1.00  MRR=1.00
+
+  bm25: no misses - every gold doc retrieved in top-3.
+
+======================================================================
+ANSWERS    - all 26 questions  (offline-extractive, gate: top score < 5.0)
+======================================================================
+
+  REFUSALS (the rubric's #1 check)
+    traps refused:            3/4
+      FAILED 24: "How much does the Enterprise plan cost per month?" -> "Billing & Refund Policy - Monthly plans"
+    answerable falsely refused: 0/22
+
+  ANSWER QUALITY (22 attempted answerable questions)
+    mean token-F1 vs gold:    0.44
+    citation accuracy:        22/22 cite the gold document
+
